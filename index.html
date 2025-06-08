@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <title>Car Repair Website</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/services-card.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Hero Section  ++ Header -->
+    <section id="hero" class="text-white text-center py-5 hero">
+      <!-- Header -->
+      <header
+        class="header container justify-content-between align-items-center"
+        id="header_wrapper">
+        <nav class="navbar navbar-expand-md sticky-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#hero">
+              <img src="./img/logo.png" alt="" loading="lazy" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarContent"
+              aria-controls="navbarContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              isOpening="true">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end mt-3"
+              id="navbarContent">
+              <ul class="navbar-nav" id="navUl">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#feedback">Feedback</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div id="home" class="container hero-container">
+        <h2 class="display-3 fw-bold">
+          Get Professional Car Repair and Maintenance
+        </h2>
+        <p class="lead">
+          With <span>Tech</span><span>Car</span> Lorem ipsum dolor, sit amet
+          consectetur adipisicing elit. Ullam, animisd
+        </p>
+        <a href="#about" class="btn btn-success mt-3">Book an Appointment</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-3 py-md-5 mb-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 about-content">
+            <div class="container-fluid pre-title">
+              <h3>who we are</h3>
+            </div>
+            <h2 class="container-fluid section-title">
+              We Have 15 Years of Experience
+            </h2>
+            <p class="about-text big-only">
+              At TechCar, we’ve been proudly serving our community with expert
+              car repair and maintenance services for over 15 years. Our
+              experienced mechanics are dedicated to providing honest, reliable,
+              and efficient solutions to keep your vehicle running smoothly.
+              Whether it’s a routine oil change or complex engine diagnostics,
+              we bring knowledge, precision, and care to every job.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="./img/about.png"
+              alt="About Us"
+              class="img-fluid"
+              loading="lazy" />
+          </div>
+        </div>
+        <p class="about-text small-only mt-4">
+          At TechCar, we’ve been proudly serving our community with expert car
+          repair and maintenance services for over 15 years. Our experienced
+          mechanics are dedicated to providing honest, reliable, and efficient
+          solutions to keep your vehicle running smoothly. Whether it’s a
+          routine oil change or complex engine diagnostics, we bring knowledge,
+          precision, and care to every job.
+        </p>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-dark text-white py-3 py-md-5">
+      <div class="background-icons"></div>
+      <div class="container services-section py-5">
+        <div class="container-fluid pre-title mb-3 mb-md-4">
+          <h3>what do we offer</h3>
+        </div>
+        <h2 class="container-fluid section-title text-white mb-5">
+          check our services
+        </h2>
+
+        <!-- Services Carousel Start -->
+        <div
+          id="servicesCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-bs-interval="80000">
+          <!-- Indicators -->
+          <div class="carousel-indicators b-20">
+            <button
+              type="button"
+              data-bs-target="#servicesCarousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"></button>
+            <button
+              type="button"
+              data-bs-target="#servicesCarousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button
+              type="button"
+              data-bs-target="#servicesCarousel"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <!-- Carousel Inner -->
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-lg-4 col-md-6 col-12 flex-align-center mb-4">
+                  <article class="card">
+                    <div class="half-circle overlay"></div>
+                    <div class="half-circle red-underline"></div>
+                    <div class="half-circle engine-background"></div>
+                    <div class="service-title">Engine Diagnostics</div>
+                    <div class="pic">
+                      <img
+                        loading="lazy"
+                        src="./img/services/service-card-logo.webp"
+                        alt="service card logo" />
+                    </div>
+                    <div class="service-details">
+                      Computerized scanning to identify faults, check-engine
+                      alerts, and performance issues.
+                    </div>
+                  </article>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 flex-align-center mb-4">
+                  <article class="card">
+                    <div class="half-circle overlay"></div>
+                    <div class="half-circle red-underline"></div>
+                    <div class="half-circle safety-background"></div>
+                    <div class="service-title">Safety Inspections</div>
+                    <div class="pic">
+                      <img
+                        loading="lazy"
+                        src="./img/services/service-card-logo.webp"
+                        alt="service card logo" />
+                    </div>
+                    <div class="service-details">
+                      Comprehensive checks of brakes, lights, tires, and
+                      steering to meet safety standards.
+                    </div>
+                  </article>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 flex-align-center mb-4">
+                  <article class="card">
+                    <div class="half-circle overlay"></div>
+                    <div class="half-circle red-underline"></div>
+                    <div class="half-circle battery-background"></div>
+                    <div class="service-title">
+                      Battery Testing &amp; Replacement
+                    </div>
+                    <div class="pic">
+                      <img
+                        loading="lazy"
+                        src="./img/services/service-card-logo.webp"
+                        alt="service card logo" />
+                    </div>
+                    <div class="service-details">
+                      Quick battery health check and professional installation
+                      of a new battery if needed.
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-lg-4 col-md-6 col-12 flex-align-center mb-4">
+                  <article class="card">
+                    <div class="half-circle overlay"></div>
+                    <div class="half-circle red-underline"></div>
+                    <div class="half-circle oil-background"></div>
+                    <div class="service-title">Oil &amp; Filter Service</div>
+                    <div class="pic">
+                      <img
+                        loading="lazy"
+                        src="./img/services/service-card-logo.webp"
+                        alt="service card logo" />
+                    </div>
+                    <div class="service-details">
+                      Premium oil change and filter swap to protect your engine
+                      and improve efficiency.
+                    </div>
+                  </article>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 flex-align-center mb-4">
+                  <article class="card">
+                    <div class="half-circle overlay"></div>
+                    <div class="half-circle red-underline"></div>
+                    <div class="half-circle tire-background"></div>
+                    <div class="service-title">
+                      Tire Rotation &amp; Balancing
+                    </div>
+                    <div class="pic">
+                      <img
+                        loading="lazy"
+                        src="./img/services/service-card-logo.webp"
+                        alt="service card logo" />
+                    </div>
+                    <div class="service-details">
+                      Rotate and balance tires for even wear, better handling,
+                      and longer tire life.
+                    </div>
+                  </article>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 flex-align-center mb-4">
+                  <article class="card">
+                    <div class="half-circle overlay"></div>
+                    <div class="half-circle red-underline"></div>
+                    <div class="half-circle heating-background"></div>
+                    <div class="service-title">AC &amp; Heating Service</div>
+                    <div class="pic">
+                      <img
+                        loading="lazy"
+                        src="./img/services/service-card-logo.webp"
+                        alt="service card logo" />
+                    </div>
+                    <div class="service-details">
+                      Inspect, recharge, and repair your HVAC system for
+                      year-round comfort.
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-lg-4 col-md-6 col-12 flex-align-center mb-4">
+                  <article class="card">
+                    <div class="half-circle overlay"></div>
+                    <div class="half-circle red-underline"></div>
+                    <div class="half-circle brake-background"></div>
+                    <div class="service-title">Brake Service</div>
+                    <div class="pic">
+                      <img
+                        loading="lazy"
+                        src="./img/services/service-card-logo.webp"
+                        alt="service card logo" />
+                    </div>
+                    <div class="service-details">
+                      Pad replacement, rotor resurfacing, and fluid flush to
+                      restore full stopping power.
+                    </div>
+                  </article>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 flex-align-center mb-4">
+                  <article class="card">
+                    <div class="half-circle overlay"></div>
+                    <div class="half-circle red-underline"></div>
+                    <div class="half-circle suspension-background"></div>
+                    <div class="service-title">Suspension &amp; Alignment</div>
+                    <div class="pic">
+                      <img
+                        loading="lazy"
+                        src="./img/services/service-card-logo.webp"
+                        alt="service card logo" />
+                    </div>
+                    <div class="service-details">
+                      Shock replacement and wheel alignment for a smooth,
+                      stable, and safe ride.
+                    </div>
+                  </article>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 flex-align-center mb-4">
+                  <article class="card">
+                    <div class="half-circle overlay"></div>
+                    <div class="half-circle red-underline"></div>
+                    <div class="half-circle exhaust-background"></div>
+                    <div class="service-title">Exhaust Repair</div>
+                    <div class="pic">
+                      <img
+                        loading="lazy"
+                        src="./img/services/service-card-logo.webp"
+                        alt="service card logo" />
+                    </div>
+                    <div class="service-details">
+                      Muffler and pipe repair or replacement to reduce noise and
+                      improve emissions.
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Controls -->
+          <button
+            class="carousel-control-prev fix-left"
+            type="button"
+            data-bs-target="#servicesCarousel"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next fix-right"
+            type="button"
+            data-bs-target="#servicesCarousel"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-- Services Carousel End -->
+      </div>
+    </section>
+
+    <!-- Why us Section -->
+    <section id="whyus" class="bg-dark py-md-5">
+      <div class="background-icons"></div>
+      <div class="container">
+        <div class="container-fluid pre-title small-only mt-5">
+          <h3>why choose us</h3>
+        </div>
+        <h2 class="container-fluid section-title small-only text-white">
+          What Sets TechCar Apart
+        </h2>
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <img
+              src="./img/whyus.webp"
+              alt="About Us"
+              class="img-fluid"
+              loading="lazy" />
+          </div>
+          <div class="col-md-6">
+            <div class="container-fluid pre-title big-only">
+              <h3>why choose us</h3>
+            </div>
+            <h2 class="container-fluid section-title big-only text-white">
+              What Sets <span>Tech</span>Car Apart
+            </h2>
+            <ul class="list-group list-group-flush bg-dark mt-5 mt-lg-0">
+              <li class="list-group-item">
+                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                Certified technicians with up‐to‐date training and tools
+              </li>
+              <li class="list-group-item">
+                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                Transparent, upfront pricing—no hidden fees
+              </li>
+              <li class="list-group-item">
+                <i class="bi bi-check-circle-fill text-success me-2"></i> Rapid
+                turnaround times to get you back on the road
+              </li>
+              <li class="list-group-item">
+                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                Genuine OEM parts and industry-leading warranties
+              </li>
+              <li class="list-group-item">
+                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                Personalized customer care and clear updates
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Customer Feedback Section -->
+    <section id="feedback" class="bg-light py-3 py-md-5">
+      <div class="background-icons"></div>
+      <div class="container">
+        <div class="container-fluid pre-title mb-3 mb-md-4">
+          <h3>what they say about us</h3>
+        </div>
+        <h2 class="container-fluid section-title mb-5">
+          check our Customer Feedback
+        </h2>
+
+        <div
+          id="feedbackCarousel"
+          class="carousel slide carousel-dark"
+          data-bs-ride="carousel"
+          data-bs-interval="500000">
+          <!-- Indicators -->
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#feedbackCarousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"></button>
+            <button
+              type="button"
+              data-bs-target="#feedbackCarousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button
+              type="button"
+              data-bs-target="#feedbackCarousel"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+            <button
+              type="button"
+              data-bs-target="#feedbackCarousel"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"></button>
+            <button
+              type="button"
+              data-bs-target="#feedbackCarousel"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"></button>
+          </div>
+
+          <!-- Slides -->
+          <div class="carousel-inner bg-see-through">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="row align-items-center flex-column flex-md-row">
+                <div
+                  class="feedback-img-container col-lg-3 text-center mb-3 mb-lg-0">
+                  <img
+                    src="./img/feedback/toyota.webp"
+                    class="rounded-circle feedback-img"
+                    alt="Client 1"
+                    width="120" />
+                </div>
+                <div class="col-lg-9">
+                  <h5>David — Toyota Corolla</h5>
+                  <p class="text-muted">Issue: Brake failure</p>
+                  <blockquote class="blockquote">
+                    <p class="mb-0">
+                      "Great service! They diagnosed and fixed my brakes on
+                      same-day."
+                    </p>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="row align-items-center flex-column flex-md-row">
+                <div
+                  class="feedback-img-container col-lg-3 text-center mb-3 mb-lg-0">
+                  <img
+                    src="./img/feedback/bmw.webp"
+                    class="rounded-circle feedback-img"
+                    alt="Client 2"
+                    width="120" />
+                </div>
+                <div class="col-lg-9">
+                  <h5>Jafier — BMW serie 3</h5>
+                  <p class="text-muted">Issue: AC not cooling</p>
+                  <blockquote class="blockquote">
+                    <p class="mb-0">
+                      "Very satisfied! The team fixed my AC and explained
+                      everything clearly. Great experience."
+                    </p>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+              <div class="row align-items-center flex-column flex-md-row">
+                <div
+                  class="feedback-img-container col-lg-3 text-center mb-3 mb-lg-0">
+                  <img
+                    src="./img/feedback/ford.webp"
+                    class="rounded-circle feedback-img"
+                    alt="Client 3"
+                    width="120" />
+                </div>
+                <div class="col-lg-9">
+                  <h5>Maria — Ford fiesta</h5>
+                  <p class="text-muted">Issue: Transmission issues</p>
+                  <blockquote class="blockquote">
+                    <p class="mb-0">
+                      "Top-notch! Honest pricing and great communication
+                      throughout the repair process."
+                    </p>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="carousel-item">
+              <div class="row align-items-center flex-column flex-md-row">
+                <div
+                  class="feedback-img-container col-lg-3 text-center mb-3 mb-lg-0">
+                  <img
+                    src="./img/feedback/honda.webp"
+                    class="rounded-circle feedback-img"
+                    alt="Client 4"
+                    width="120" />
+                </div>
+                <div class="col-lg-9">
+                  <h5>Idris — Honda Civic</h5>
+                  <p class="text-muted">Issue: Battery kept dying</p>
+                  <blockquote class="blockquote">
+                    <p class="mb-0">
+                      "They tested and replaced my battery quickly. I appreciate
+                      how friendly everyone was."
+                    </p>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="carousel-item">
+              <div class="row align-items-center flex-column flex-md-row">
+                <div
+                  class="feedback-img-container col-lg-3 text-center mb-3 mb-lg-0">
+                  <img
+                    src="./img/feedback/peugeot.webp"
+                    class="rounded-circle feedback-img"
+                    alt="Client 5"
+                    width="120" />
+                </div>
+                <div class="col-lg-9">
+                  <h5>Robert — Peugeot 308</h5>
+                  <p class="text-muted">Issue: Check engine light</p>
+                  <blockquote class="blockquote">
+                    <p class="mb-0">
+                      "These guys really know their stuff. The diagnostics were
+                      spot-on, and my engine runs great now."
+                    </p>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#feedbackCarousel"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#feedbackCarousel"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-3 py-md-5">
+      <div class="container">
+        <h3 class="text-center mb-4">Schedule Your Appointment Today</h3>
+        <form id="contactForm" class="mx-auto contact-form">
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Name"
+              required />
+          </div>
+          <div class="mb-3">
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Email"
+              required />
+          </div>
+          <div class="mb-3">
+            <input type="date" class="form-control" required />
+          </div>
+          <div class="mb-3">
+            <input type="time" class="form-control" required />
+          </div>
+          <div class="mb-3">
+            <textarea
+              class="form-control"
+              placeholder="Your Message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-success w-75">Book Now</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+      <p>&copy; 2025 TechCar. All rights reserved.</p>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery-scrolltofixed.js"></script>
+    <script src="./js/jquery.nav.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
