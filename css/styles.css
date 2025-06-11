@@ -221,7 +221,7 @@ section {
 /* Responsive Adjustments */
 @media (max-width: 992px) {
   .feedback-img-container {
-    padding-left: 12px;
+    padding-left: 12px !important;
   }
   #feedback .carousel-inner {
     padding: 20px 15px;
@@ -240,6 +240,16 @@ section {
   #feedback h5,
   #feedback p.text-muted {
     text-align: center;
+  }
+}
+@media (max-width: 1400px) {
+  .feedback-img-container {
+    padding-left: 70px;
+  }
+}
+@media (max-width: 1200px) {
+  .feedback-img-container {
+    padding-left: 60px;
   }
 }
 
